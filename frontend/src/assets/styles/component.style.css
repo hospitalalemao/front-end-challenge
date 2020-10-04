@@ -1,0 +1,40 @@
+/* botões */
+.btn{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+.btn-info{    
+    border-color: #13C6CF;
+    background-color: #13C6CF;    
+}
+/* botões */
+
+/* navegação */
+.nav-step{
+    display: table;
+    margin: 15px auto;
+}
+.nav-step li{
+    display: table-cell;
+    padding: 0 25px;
+}
+.nav-step li a{
+    text-align: center;
+    display: block;  
+    color: #00798A;  
+}
+.nav-step li a:hover{
+    text-decoration: none;
+}
+.nav-step li span:nth-child(1){
+    color: #ffffff;
+    background-color: #00B2BB;
+    border-radius: 15px;
+    width: 1.3em;
+    display: block;
+    margin: 0 auto;
+    font-weight: 700;
+    line-height: 22px;
+}
+/* navegação */
