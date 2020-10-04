@@ -11,6 +11,12 @@ h1, h2, h3, h4{
     text-transform: uppercase;
     font-weight: 700;
 }
+h1.gray, h2.gray, h3.gray, h4.gray{
+    color: #7A7A7A;
+}
+h1.normal, h2.normal, h3.normal, h4.normal{
+    font-weight: normal;
+}
 h1{
     font-size: 21px;
 }
@@ -22,4 +28,7 @@ h1 p{
 }
 h2 p {
     font-size: 14px;
+}
+.transparent{
+    color: transparent;
 }
