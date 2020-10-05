@@ -1,27 +1,27 @@
 <template>
-    <section>
+    <section id="nav-bar-custom" class="nav-bar-custom">
         <div class="nav-progress-bar"></div>          
         <ul class="nav-step p-0">
             <li class="ml-5">
-                <router-link to="/">
+                <router-link to="/sintomas">
                     <span :class="etapa1">1</span>
                     <span>Sintomas</span>
                 </router-link>
             </li>
             <li class="ml-5">
-                <router-link to="/">
+                <router-link to="/dados-gerais">
                     <span :class="etapa2">2</span>
                     <span :class="this.etapa < 2 ? 'transparent' : ''">Dados pessoais</span>
                 </router-link>
             </li>
             <li class="ml-5">
-                <router-link to="/">
+                <router-link to="/pagamento">
                     <span :class="etapa3">3</span>
                     <span :class="this.etapa < 3 ? 'transparent' : ''">Pagamento</span>
                 </router-link>
             </li>
             <li class="ml-5">
-                <router-link to="/">
+                <router-link to="/atendimento">
                     <span :class="etapa4">4</span>
                     <span :class="this.etapa < 4 ? 'transparent' : ''">Atendimento</span>
                 </router-link>
@@ -32,7 +32,29 @@
 <script>
 export default {
     props: ['etapa'],
+    methods: {
+        scrollBar(){
+            var scrollBase = 0
+            switch(this.etapa){
+                case '2':
+                    scrollBase = 0;
+                    break;
+                case '3':
+                    scrollBase = 150;
+                    break;
+                case '4':
+                    scrollBase = 400;
+                    break;
+            }
 
+            document.getElementById('nav-bar-custom').scrollLeft = scrollBase;
+
+            console.log(scrollBase);
+        }
+    },
+    mounted() {
+        this.scrollBar();
+    },
     data() {
         return {
             etapa1: this.etapa >= 1 ? 'active': '',
@@ -44,6 +66,9 @@ export default {
 }
 </script>
 <style>
+.nav-bar-custom{
+    overflow-x: auto
+}
 .nav-progress-bar{
     width: 500px;
     border-top: dashed 1px #707070;
@@ -87,5 +112,13 @@ export default {
     margin: 0 auto;
     font-weight: 700;
     line-height: 22px;
+}
+@media only screen and (max-width: 700px) {
+  .nav-progress-bar{
+        width: 657px;
+    }
+    .nav-step{
+        width: 657px;
+    }
 }
 </style>

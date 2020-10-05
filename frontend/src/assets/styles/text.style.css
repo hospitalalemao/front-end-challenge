@@ -2,7 +2,7 @@
 * {
     font-family: 'Source Sans Pro', sans-serif;
 }
-p{
+p, form label{
     color: #7A7A7A;
     line-height: 25px;
 }
@@ -20,14 +20,17 @@ h1.normal, h2.normal, h3.normal, h4.normal{
 h1{
     font-size: 21px;
 }
-h2{
+h2, h3{
     font-size: 18px;
 }
-h1 p{
+h1 p, form label{
     font-size: 18px;
 }
 h2 p {
     font-size: 14px;
+}
+.bold{
+    font-weight: 700;
 }
 .transparent{
     color: transparent;

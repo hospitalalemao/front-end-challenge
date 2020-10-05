@@ -1,5 +1,5 @@
-<template>
-    <div>
+<template>    
+    <section>
         <div class="row">
             <div class="col-md-12 pt-2 pl-2 mb-5">
                 <router-link to="/">
@@ -8,14 +8,14 @@
             </div>
         </div>        
         <b-row> 
-            <b-col>                       
+            <b-col cols="12">                       
                 <h1 class="mb-5">Pronto atendimento virtual</h1>
                 <meu-progressbar etapa="1"></meu-progressbar>
             </b-col>    
         </b-row>        
         <h2 class="gray normal mb-4">Você possui algum dos sintomas abaixo?</h2>
         <b-row>
-            <b-col class="sintomas-etapa p-3 rounded">
+            <b-col class="p-3 rounded bg-blue">
                 <b-row class="my-2">
                     <b-col class="sintomas pb-2 rounded">                
                         <b-col class="rounded mt-2 pt-3" @click="selecionar(sintoma)" :class="sintoma.selecionado ? 'active': 'not-active'" v-for="sintoma of sintomas">
@@ -30,7 +30,8 @@
                 </b-row>
             </b-col>
         </b-row>
-    </div>
+    </section>
+    
 </template>
 <script>
     import Progressbar from '../shared/progressbar/Progressbar';
@@ -66,9 +67,6 @@
 </script>
 
 <style>
-    .sintomas-etapa{
-        background-color: #CCF0F1
-    }
     .sintomas .rounded{
         border: solid 1px #00B2BB;        
         color: #00798A;
