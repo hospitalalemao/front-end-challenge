@@ -122,12 +122,8 @@
                                     <label class="custom-control-label" for="termo">Aceito os <a href="">termos e condições de uso</a>.</label>
                                 </div>
                             </b-col>
-                        </div>
-                        <b-row>
-                            <b-col class="text-center">    
-                                <router-link to="/dados-gerais" class="btn btn-info px-5">Continuar</router-link>
-                            </b-col>    
-                        </b-row>
+                        </div>                        
+                        <meu-botao link="/pagamento" />
                     </form>
                 </b-col>
             </b-row>
@@ -136,10 +132,12 @@
 </template>
 <script>
     import Progressbar from '../shared/progressbar/Progressbar';
+    import Botao from '../shared/botao/Botao';
 
     export default {
         components: {
-            'meu-progressbar': Progressbar
+            'meu-progressbar': Progressbar,
+            'meu-botao': Botao
         }
     }
 </script> 

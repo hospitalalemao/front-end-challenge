@@ -23,11 +23,7 @@
                         </b-col>                
                     </b-col>
                 </b-row>
-                <b-row>
-                    <b-col class="text-center">    
-                        <router-link to="/dados-gerais" class="btn btn-info px-5">Continuar</router-link>
-                    </b-col>    
-                </b-row>
+                <meu-botao link="/dados-gerais" />
             </b-col>
         </b-row>
     </section>
@@ -35,10 +31,12 @@
 </template>
 <script>
     import Progressbar from '../shared/progressbar/Progressbar';
+    import Botao from '../shared/botao/Botao';
 
     export default {
         components: {
-            'meu-progressbar': Progressbar
+            'meu-progressbar': Progressbar,
+            'meu-botao': Botao
         },
         methods: {
             selecionar(sintoma) {

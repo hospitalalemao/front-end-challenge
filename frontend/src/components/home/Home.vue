@@ -33,16 +33,16 @@
                 </section>            
             </b-col>    
         </b-row>
-        <b-row>
-            <b-col class="text-center">    
-                <router-link to="/sintomas" class="btn btn-info px-5">Continuar</router-link>
-            </b-col>    
-        </b-row>
+        <meu-botao link="/sintomas" />
     </div>
 </template>
 <script>
-    export default {
+    import Botao from '../shared/botao/Botao';
 
+    export default {
+        components: {
+            'meu-botao': Botao
+        }
     }
 </script>
 

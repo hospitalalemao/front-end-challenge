@@ -13,3 +13,7 @@
 .bg-blue{
     background-color: #CCF0F1
 }
+
+.simple-link:hover{
+    text-decoration: none;
+}

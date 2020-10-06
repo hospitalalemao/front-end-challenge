@@ -32,6 +32,11 @@ h2 p {
 .bold{
     font-weight: 700;
 }
+.h-large{
+    font-size: 48px;
+    text-transform: initial;
+    font-weight: normal;
+}
 .transparent{
     color: transparent;
 }

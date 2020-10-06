@@ -15,18 +15,24 @@
         </b-row>
         <b-row>
             <b-col class="text-center">
-                <router-link class="simple-link" to="/atendimento-video">
-                    <h2 class="h-large mt-5 mb-3">Você será atendido em breve</h2>
-                    <p class="mb-0">Seu atendimento pelo profissional do HAOC irá começar nos próximos instantes.</p>
-                    <p>Não feche esta aba e certifique-se que sua câmera e microfone estão funcionando e que sua conexão é estável.</p>
+                <router-link class="simple-link" to="/atendimento-presencial">
+                    <h2 class="h-large mt-5 mb-3">Obrigado!</h2>
+                    <p class="mb-0">Seu atendimento foi finalizado.</p>
+                    <p>Em até 2h você receberá um e-mail com a sua receita médica e/ou pedido de exames.</p>
                 </router-link>
             </b-col>
         </b-row>
     </div>
 </template>
 <script>
+    import Botao from '../shared/botao/Botao';
+
     export default {
+        components: {
+            'meu-botao': Botao
+        }
     }
 </script> 
 <style>
+    
 </style>
