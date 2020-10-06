@@ -1,18 +1,13 @@
-# frontend
+# Teste Frontend Luiz Felipe Tavares das Neves
 
-> A Vue.js project
+A aplicação foi construida utilizando as seguintes tecnologias
 
-## Build Setup
+* VueJs 2.7.0
 
-``` bash
-# install dependencies
-npm install
+Para a aplicação funcionar localmente é necessário ter préviamente instalado os pacotes Docker e Docker-compose
 
-# serve with hot reload at localhost:8080
-npm run dev
+Após clonar o repositório basta seguir os seguintes passos:
 
-# build for production with minification
-npm run build
-```
++ dentro da pasta raiz execute o comando "docker-compose up -d --build"
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Após essas instruções o sistema estará diponível no link: [http://localhost:8080](http://localhost:8080)
